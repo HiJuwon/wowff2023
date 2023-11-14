@@ -1,0 +1,128 @@
+body {
+    color: #fff;
+    overflow: hidden;
+    height: 100vh;
+
+    user-select: none; /* 텍스트 드래그 방지 */
+
+    margin: 0;
+    padding: 0;
+}
+
+.main-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+
+    margin: 0;
+
+    background-image: url("../img/main-background.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    animation: wiggle 20s infinite;
+}
+
+@keyframes wiggle {
+    0% { background-position: 0 0 0; transform: scale(1.1); }
+    25% { background-position: 0 40% 40%; transform: scaleZ(1.1); }
+    50% { background-position: 40% 10% 0; transform: scaleY(1.15); transform: scaleX(1.1); }
+    75% { background-position: 20% 60% 20%; transform: scaleZ(1.1); }
+    100% { background-position: 0 0 0; transform: scale(1.1);}
+}
+
+.main-container {
+    height: calc(100vh - 3.75rem);
+    position: relative;
+
+    padding: 1.875rem;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#WWF {
+    color: #fff;
+    text-decoration : none;
+
+    background-image: url("../img/main-background.png");
+    background-clip: text;
+    -webkit-background-clip: text;
+    mix-blend-mode: overlay;
+}
+
+#WWF:hover {
+    mix-blend-mode: unset;
+}
+
+#WWF h1 {
+    font-size: 11.25rem;
+    line-height: 85%; /* 9.5625rem */
+
+    padding-top: 4px;
+
+    margin-block-start: 0rem;
+    margin-block-end: 0rem;
+}
+
+#HSDW {
+    font-size: 2rem;
+    line-height: 140%; /* 2.8rem */
+
+    display: flex;
+    flex-direction: row;
+}
+
+#HSDW p {
+    margin: 0;
+}
+
+#HSDW img {
+    width: 4.44863rem;
+    height: 4.6875rem;
+
+    margin-left: 3.56rem;
+
+    flex-shrink: 0;
+}
+
+footer {
+    background-image: url("../img/main-background.png");
+    background-clip: text;
+    -webkit-background-clip: text;
+    mix-blend-mode: exclusion;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.date {
+    position: absolute;
+    bottom: 0;
+    line-height: 1;
+}
+
+.date h5 {
+    font-size: 6rem;
+    margin: 0;
+}
+
+.date h6 {
+    font-size: 6rem;
+
+    margin: 0 0 1.875rem 11.75rem;
+}
+
+.place {
+    font-size: 2rem;
+
+    position: absolute;
+    bottom: 0;
+    right: 1.875rem;
+}
