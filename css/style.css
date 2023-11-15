@@ -1,0 +1,258 @@
+body {
+    font-family: 'Theinhardt Mono', 'Pretendard'; /* 영문, 숫자, 한글 폰트 */
+    font-weight: 400;
+
+    color: #fff;
+    overflow: hidden;
+    height: 100vh;
+
+    user-select: none; /* 텍스트 드래그 방지 */
+
+    margin: 0;
+    padding: 0;
+}
+
+.main-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+
+    margin: 0;
+
+    background-image: url("../img/main_background.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    animation: wiggle 20s infinite;
+}
+
+@keyframes wiggle {
+    0% { background-position: 0 0 0; transform: scale(1.1); }
+    25% { background-position: 0 40% 40%; transform: scaleZ(1.1); }
+    50% { background-position: 40% 10% 0; transform: scaleY(1.15); transform: scaleX(1.1); }
+    75% { background-position: 20% 60% 20%; transform: scaleZ(1.1); }
+    100% { background-position: 0 0 0; transform: scale(1.1);}
+}
+
+.main-container {
+    height: calc(100vh - 3.75rem);
+    position: relative;
+
+    padding: 1.875rem;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#WFF {
+    color: #fff;
+    text-decoration : none;
+
+    margin-top: -1.75rem;
+
+    background-image: url("../img/main_background.png");
+    background-clip: text;
+    -webkit-background-clip: text;
+    mix-blend-mode: overlay;
+}
+
+#WFF:hover {
+    mix-blend-mode: unset;
+}
+
+#WFF h1 {
+    font-size: 11.25rem;
+    line-height: 85%; /* 9.5625rem */
+
+    padding-top: 4px;
+
+    margin-block-start: 0rem;
+    margin-block-end: 0rem;
+}
+
+#HSDW {
+    font-size: 2rem;
+    line-height: 140%; /* 2.8rem */
+
+    display: flex;
+    flex-direction: row;
+}
+
+#HSDW h3 {
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1.4;
+
+    margin: -0.6rem 0 0 0;
+}
+
+#HSDW img {
+    width: 4.44863rem;
+    height: 4.6875rem;
+
+    margin-left: 3.56rem;
+
+    flex-shrink: 0;
+}
+
+footer {
+    background-image: url("../img/main_background.png");
+    background-clip: text;
+    -webkit-background-clip: text;
+    mix-blend-mode: exclusion;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.date {
+    position: absolute;
+    bottom: -0.7rem;
+    line-height: 1;
+}
+
+.date h5 {
+    font-family: 'Theinhardt Mono';
+    font-size: 6rem;
+    letter-spacing: .05em;
+
+    margin: 0 0 0 -0.4rem;
+}
+
+.date h6 {
+    font-size: 6rem;
+    letter-spacing: .02em;
+
+    margin: 0 0 1.875rem 12.25rem;
+}
+
+.place {
+    font-size: 2rem;
+
+    position: absolute;
+    bottom: -0.7rem;
+    right: 1.875rem;
+}
+
+
+
+/* LEGAL DISCLAIMER
+ *
+ * These Fonts are licensed only for use on these domains and their subdomains:
+ * wowff2023.com
+ *
+ * It is illegal to download or use them on other websites.
+ *
+ * While the @font-face statements below may be modified by the client, this
+ * disclaimer may not be removed.
+ *
+ * Optimo webfonts are protected by copyright law and provided under license. To modify, alter, translate, convert, decode or reverse engineer in any manner whatsoever, including converting the Font Software into a different format is strictly prohibited. The webfont files are not to be used for anything other than web font use.
+ *
+ * optimo.ch
+ */
+
+/* INSTRUCTIONS
+ *
+ * Copy the Legal Disclaimer, the domains name and the @font-faces statements to your regular CSS file. The fonts folder(s) should be placed relative to the regular CSS file.
+ */
+
+ @font-face {
+    font-family: 'Theinhardt Mono';
+    src: url('Theinhardt-Mono-Regular.eot');
+    src: url('Theinhardt-Mono-Regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Theinhardt-Mono-Regular/Theinhardt-Mono-Regular.woff2') format('woff2'),
+         url('../fonts/Theinhardt-Mono-Regular/Theinhardt-Mono-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    unicode-range: U+0041-005A, U+0061-007A, U+0030-0039; /* 영어 대문자, 영어 소문자, 숫자 */
+}
+
+
+/*
+Copyright (c) 2021 Kil Hyung-jin, with Reserved Font Name Pretendard.
+https://github.com/orioncactus/pretendard
+
+This Font Software is licensed under the SIL Open Font License, Version 1.1.
+This license is copied below, and is also available with a FAQ at:
+http://scripts.sil.org/OFL
+*/
+
+/* unicode-range: 한글, 특수문자 */
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 900;
+	font-display: swap;
+	src: local('Pretendard Black'), url(../fonts/Pretendard-1.3.9/woff2/Pretendard-Black.woff2) format('woff2'), url(../fonts/Pretendard-1.3.9/woff/Pretendard-Black.woff) format('woff');
+    unicode-range: U+AC00-D7A3, U+0020-002F, U+003A-0040, U+005B-0060, U+007B-007E;
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 800;
+	font-display: swap;
+	src: local('Pretendard ExtraBold'), url(../fonts/Pretendard-1.3.9/woff2/Pretendard-ExtraBold.woff2) format('woff2'), url(../fonts/Pretendard-1.3.9/woff/Pretendard-ExtraBold.woff) format('woff');
+    unicode-range: U+AC00-D7A3, U+0020-002F, U+003A-0040, U+005B-0060, U+007B-007E;
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 700;
+	font-display: swap;
+	src: local('Pretendard Bold'), url(../fonts/Pretendard-1.3.9/woff2/Pretendard-Bold.woff2) format('woff2'), url(../fonts/Pretendard-1.3.9/woff/Pretendard-Bold.woff) format('woff');
+    unicode-range: U+AC00-D7A3, U+0020-002F, U+003A-0040, U+005B-0060, U+007B-007E;
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 600;
+	font-display: swap;
+	src: local('Pretendard SemiBold'), url(../fonts/Pretendard-1.3.9/woff2/Pretendard-SemiBold.woff2) format('woff2'), url(../fonts/Pretendard-1.3.9/woff/Pretendard-SemiBold.woff) format('woff');
+    unicode-range: U+AC00-D7A3, U+0020-002F, U+003A-0040, U+005B-0060, U+007B-007E;
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 500;
+	font-display: swap;
+	src: local('Pretendard Medium'), url(../fonts/Pretendard-1.3.9/woff2/Pretendard-Medium.woff2) format('woff2'), url(../fonts/Pretendard-1.3.9/woff/Pretendard-Medium.woff) format('woff');
+    unicode-range: U+AC00-D7A3, U+0020-002F, U+003A-0040, U+005B-0060, U+007B-007E;
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 400;
+	font-display: swap;
+	src: local('Pretendard Regular'), url(../fonts/Pretendard-1.3.9/woff2/Pretendard-Regular.woff2) format('woff2'), url(../fonts/Pretendard-1.3.9/woff/Pretendard-Regular.woff) format('woff');
+    unicode-range: U+AC00-D7A3, U+0020-002F, U+003A-0040, U+005B-0060, U+007B-007E;
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 300;
+	font-display: swap;
+	src: local('Pretendard Light'), url(../fonts/Pretendard-1.3.9/woff2/Pretendard-Light.woff2) format('woff2'), url(../fonts/Pretendard-1.3.9/woff/Pretendard-Light.woff) format('woff');
+    unicode-range: U+AC00-D7A3, U+0020-002F, U+003A-0040, U+005B-0060, U+007B-007E;
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 200;
+	font-display: swap;
+	src: local('Pretendard ExtraLight'), url(../fonts/Pretendard-1.3.9/woff2/Pretendard-ExtraLight.woff2) format('woff2'), url(../fonts/Pretendard-1.3.9/woff/Pretendard-ExtraLight.woff) format('woff');
+    unicode-range: U+AC00-D7A3, U+0020-002F, U+003A-0040, U+005B-0060, U+007B-007E;
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 100;
+	font-display: swap;
+	src: local('Pretendard Thin'), url(../fonts/Pretendard-1.3.9/woff2/Pretendard-Thin.woff2) format('woff2'), url(../fonts/Pretendard-1.3.9/woff/Pretendard-Thin.woff) format('woff');
+    unicode-range: U+AC00-D7A3, U+0020-002F, U+003A-0040, U+005B-0060, U+007B-007E;
+}
