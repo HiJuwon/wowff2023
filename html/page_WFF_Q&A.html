@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wow Film Festival</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="../css/page.css" rel="stylesheet" type="text/css">
+    
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+    <div class = "md-header">
+        <div id="menuToggle" class = "md-btn-index">
+        
+            <input type="checkbox" class = "md-" />
+            
+            <span></span>
+            <span></span>
+            <span></span>
+            
+            <ul id="menu">
+            <a href="../html/page_HSDW.html"><li>Hongik SIDI Week</li></a>
+            <a href="../html/page_WFF_about.html"><li>Wow Film Festival</li></a>
+            <a href="../html/page_WFF_about.html"><li>- About</li></a>
+            <a href="../html/page_WFF_location.html"><li>- Location</li></a>
+            <a href="../html/page_WFF_Q&A.html"><li>- Q & A</li></a>
+            <a href="../html/page_promotion.html"><li>Promotion</li></a>
+            </ul>
+        
+        </div>
+        <img src = "../img/symbol_WFF(black).svg" class = "md-WFF">
+        <img src = "../img/symbol_HIVCD(black).svg" class = "md-HIVCD">
+    </div>
+
+    <div class = "container-fluid main-container">
+        <div class = "row">
+
+            <header class = "col-lg-2">
+                <a href = "../index.html">
+                    <img src = "../img/symbol_WFF.svg">
+                </a>
+            </header>
+    
+            <div class = "col-lg-8 page-container">
+                <nav>
+                    <a href = "page_HSDW.html" class = "menu">Hongik SIDI Week</a>
+                    <div ID = "WFF-menu">
+                        <a href = "page_WFF_about.html" class = "menu-selected">Wow Film Festival</a>
+                        <div class = "small-nav">
+                            <a href = "page_WFF_about.html" class = "small-menu">About</a>
+                            <a href = "page_WFF_location.html" class = "small-menu">Location</a>
+                            <a href = "page_WFF_Q&A.html" class = "small-menu-selected">Q &amp; A</a>
+                        </div>
+                    </div>
+                    <a href = "page_promotion.html" class = "menu">Promotion</a>
+                </nav>
+    
+                <div class = "empty-cell"></div>
+                <div class = "empty-cell"></div>
+    
+                <ul id = "qna-list-section">
+                    <li class = "qna-list">
+                        <input type="checkbox" class="toggle" id="qna-toggle-1" hidden>
+                        <div class = "qna-title" style = "border-top: 2px solid #fff;">
+                            <h5>Q1. 사전 예매는 어떻게 하나요?</h5>
+                            <label for="qna-toggle-1" class="label">
+                                <ion-icon name="chevron-down-outline" class="arrow"></ion-icon>
+                            </label>
+                        </div>
+        
+                        <div class = "qna-answer" id="qna-answer-1">
+                            <p>12월 2일에 사전 예매 구글 폼이 오픈됩니다!
+                            <br>사전예매 폼: 
+                            <a href = "https://forms.gle/hMTJ8L6m8uYjL5RE9">바로가기</a>
+                            (12/2 오픈)
+                            </p>
+                        </div>
+                    </li>
+        
+                    <li class = "qna-list">
+                        <input type="checkbox" class="toggle" id="qna-toggle-2" hidden>
+                        <div class = "qna-title">
+                            <h5>Q2. 사전 예매와 현장 예매는 어떤 차이가 있나요?</h5>
+                            <label for="qna-toggle-2" class="label">
+                                <ion-icon name="chevron-down-outline" class="arrow"></ion-icon>
+                            </label>
+                        </div>
+    
+                        <div class = "qna-answer">
+                            <p>사전 예매자에게는 특전이 준비되어 있습니다. 와우영상제 엽서, 스티커, 그리고 홍익시디 컵을 선물로 드리니 사전 예매에 많은 관심 부탁드립니다!</p>
+                        </div>
+                    </li>
+    
+                    <li class = "qna-list">
+                        <input type="checkbox" class="toggle" id="qna-toggle-3" hidden>
+                        <div class = "qna-title">
+                            <h5>Q3. 상영회 좌석은 어떻게 선택하나요?</h5>
+                            <label for="qna-toggle-3" class="label">
+                                <ion-icon name="chevron-down-outline" class="arrow"></ion-icon>
+                            </label>
+                        </div>
+    
+                        <div class = "qna-answer">
+                            <p>와우영상제의 좌석은 교수석 / 사전 예매자석 / 현장 예매자석 총 세 가지로 나누어져 있습니다. 관람객분들은 현장에 오셔서 본인이 해당하는 구역의 좌석에 자유롭게 앉아주시면 됩니다. 다만, 사전 예매자는 현장 예매자석에 착석이 가능하나 현장 예매자는 현장 예매자석에만 착석이 가능하시니 참고 부탁드리겠습니다!</p>
+                        </div>
+                    </li>
+    
+                    <li class = "qna-list">
+                        <input type="checkbox" class="toggle" id="qna-toggle-4" hidden>
+                        <div class = "qna-title">
+                            <h5>Q4. 2023년도 졸업 전시작도 상영되나요?</h5>
+                            <label for="qna-toggle-4" class="label">
+                                <ion-icon name="chevron-down-outline" class="arrow"></ion-icon>
+                            </label>
+                        </div>
+    
+                        <div class = "qna-answer">
+                            <p>와우영상제는 와우영상제 메일을 통해 출품 받은 작품만 상영합니다.	졸업 작품을 와우영상제에도 출품하실 경우, 해당 작품을 와우영상제에서도 만나보실 수 있습니다! 그 외 졸업 전시의 작품들은 졸업전시 공간에서 관람하실 수 있습니다. 상영작이 궁금하시다면 추후 공개될 상영시간표를 참고해주세요!</p>
+                        </div>
+                    </li>
+    
+                    <li class = "qna-list">
+                        <input type="checkbox" class="toggle" id="qna-toggle-5" hidden>
+                        <div class = "qna-title">
+                            <h5>Q5. 와우영상제 시상식은 언제인가요?</h5>
+                            <label for="qna-toggle-5" class="label">
+                                <ion-icon name="chevron-down-outline" class="arrow"></ion-icon>
+                            </label>
+                        </div>
+    
+                        <div class = "qna-answer">
+                            <p>와우영상제 상영회는 12월 6일(수), 와우영상제 시상식은 12월 8일(금) 오후 6시입니다! 와우영상제가 홍익시디 주간의 일부로 진행되는 만큼, 홍익시디 주간의 마지막 날에 개최되는 홍익시디 어워드에서 시상이 이루어질 예정입니다. 와우영상제 뿐만 아니라 홍익시디 주간의 다른 행사인 2023년도 졸업 전시회, 홍익시디 어워드, 그리고 홍익시디의 밤에도 많은 관심 부탁드립니다.</p>
+                        </div>
+                    </li>
+    
+                    <li class = "qna-list">
+                        <input type="checkbox" class="toggle" id="qna-toggle-6" hidden>
+                        <div class = "qna-title">
+                            <h5>Q6. 영상제에 출품은 어떻게 하나요?</h5>
+                            <label for="qna-toggle-6" class="label">
+                                <ion-icon name="chevron-down-outline" class="arrow"></ion-icon>
+                            </label>
+                        </div>
+    
+                        <div class = "qna-answer">
+                            <p>와우영상제에 출품하실 분들께서는 와우영상제 메일로 출품 영상과 함께 썸네일과 스틸컷, 영상 제목, 캡션 등을 보내주신 후, 아래 폼을 작성해주시면 됩니다!
+                            <br>구글 폼 링크: 
+                            <a href = "https://forms.gle/Etb6w7XEXLjbSV2d8">바로가기</a></span>
+                            <br>와우영상제 메일: wowff2023@gmail.com
+                            </p>
+                        </div>
+                    </li>
+    
+                    <li class = "qna-list">
+                        <input type="checkbox" class="toggle" id="qna-toggle-7" hidden>
+                        <div class = "qna-title">
+                            <h5>Q7. 출품작 중 상영작 선정 기준이 있나요?</h5>
+                            <label for="qna-toggle-7" class="label">
+                                <ion-icon name="chevron-down-outline" class="arrow"></ion-icon>
+                            </label>
+                        </div>
+    
+                        <div class = "qna-answer">
+                            <p>와우영상제에 출품해주신 모든 영상을 상영하는 것을 원칙으로 합니다. 다만 영상이 지나치게 폭력적・선정적인 경우, 다수에게 공포감을 조성할 수 있는 내용을 포함한 경우, 지나치게 정치적・종교적 사상을 드러낸 경우 등에 한하여 운영진의 판단에 따라 상영이 제한될 수 있습니다.</p>
+                        </div>
+                    </li>
+    
+                    <li class = "qna-list">
+                        <input type="checkbox" class="toggle" id="qna-toggle-8" hidden>
+                        <div class = "qna-title">
+                            <h5>Q8. 가람홀로 가는 길이 궁금해요.</h5>
+                            <label for="qna-toggle-8" class="label">
+                                <ion-icon name="chevron-down-outline" class="arrow"></ion-icon>
+                            </label>
+                        </div>
+    
+                        <div class = "qna-answer">
+                            <p>홍문관 중앙 로비 중 지하 4층까지 연결된 엘리베이터를 탑승하시거나 중앙 계단을 이용하셔서 지하 4층으로 와주세요. 지하 4층에서 주차장으로 나오시면 가람홀과 연결된 문이 있습니다! 행사 당일에는 가람홀 안내를 위한 현수막과 인력이 배치될 예정입니다.</p>
+                        </div>
+                    </li>
+                </ul>
+    
+                <div class = "empty-cell"></div>
+                <div class = "empty-cell"></div>
+                <div class = "empty-cell"></div>
+            </div>
+    
+            <div class = "col-lg-2 HIVCD">
+                <img src = "../img/symbol_HIVCD.svg" ID = "symbol-HIVCD">
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>
+            2023 홍익시디 주간
+            <br>2023 Hongik SIDI Week
+        </p>
+
+        <div class = "gap"></div>
+
+        <p>
+            제33회 와우영상제
+            <br>33rd Wow Film Festival
+        </p>
+
+        <div class = "gap"></div>
+
+        <p>
+            서울특별시 마포구 와우산로 94, 홍문관 지하 4층 가람홀
+            <br>Garamhall, Hongmun-gwan B4F, 94, Wausan-ro, Mapo-gu, Seoul
+        </p>
+
+        <div class = "gap"></div>
+        
+        <div class = "btn-sns">
+            <a href = "mailto:wowff2023@gmail.com" class = "btn-mail">
+                <img src = "../img/icon_email.svg">
+            </a>
+            <a href = "https://www.instagram.com/2023wowff/" class = "btn-insta">
+                <img src = "../img/icon_instagram.svg">
+            </a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
