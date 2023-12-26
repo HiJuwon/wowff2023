@@ -1,0 +1,30 @@
+/* 디바이스 타입이 데스크탑일 때만 적용되는 css 속성들 */
+
+body {
+    cursor: none;
+}
+
+.custom-cursor {
+    position: fixed;
+    opacity: 0;
+    pointer-events: none;
+    
+    width: 200px;
+    height: 200px;
+
+    border-radius: 50%;
+
+    z-index: 100;
+    background-color: #D4DEE5;
+    mix-blend-mode: difference;
+
+    filter: blur(40px);
+    -webkit-filter: blur(40px);
+
+    transition: transform 350ms ease;
+    transform: translate(-50%, -50%) scale(.3);
+}
+
+.custom-cursor--link {
+    transform: translate(-50%, -50%) scale(1);
+}
