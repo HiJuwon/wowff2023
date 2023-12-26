@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WOW FILM FESTIVAL 2023</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link rel="icon" href="img/favicon/favicon_96*96.png">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src = "modal.js"></script>
+</head>
+
+<body>
+    <div class = "container-fluid main-container">
+        <!--Inspired and modified from https://github.com/Robpayot/webgl-distortion-bulge-effect-->
+        <div class = "bulge">
+            <canvas class = "bulge_canvas"></canvas>
+        </div>
+
+        <header class = "row">
+            <div id = "WFF" class = "col-md-9 col-sm-12">
+                <a href = "html/page_WFF_about.html" style="cursor: pointer">
+                    <h1 style = "margin-left: 0.3rem;">WOW</h1>
+                    <h1 style = "margin-left: 11.75rem;">Film</h1>
+                    <h1 style = "margin-left: -0.7rem;">Festival</h1>
+                </a>
+            </div>
+
+            <div id = "HSDW" class = "col-md-3">
+                <h3>2023 
+                    <span class = "info-kor">홍익시디 주간</span>
+                    <br>2023 Hongik SIDI Week
+                </h3>
+                <div class = "HSDW-logo">
+                    <img src = "img/symbol_HIVCD(white).svg">
+                </div>
+            </div>
+        </header>
+
+        <div id = "sm-nav">
+            <a href = "html/page_WFF_about.html">
+                <img src = "img/symbol_WFF(white).svg">
+            </a>
+            <div id = "sm-HSDW">
+                <h3>2023 
+                    <span class = "info-kor">홍익시디 주간</span>
+                    <br>2023 Hongik SIDI Week
+                </h3>
+                <img src = "img/symbol_HIVCD(white).svg">
+            </div>
+        </div>
+
+        <div id = "ex-sm-nav">
+            <a href = "html/page_WFF_about.html">
+                <img src = "img/symbol_WFF(white).svg">
+            </a>
+            <div class = "ex-sm-HSDW">
+                <h3>2023 
+                    <span class = "info-kor">홍익시디 주간</span>
+                    <br>2023 Hongik SIDI Week
+                </h3>
+            </div>
+            <img src = "img/symbol_HIVCD(white).svg">
+        </div>
+
+        <div id = "sm-WFF">
+            <h1>WOW</h1>
+            <h1>Film</h1>
+            <h1>Festival</h1>
+        </div>
+
+        <footer class = "row">
+            <div class = "date col-md-6">
+                <h5>12.06.</h5>
+                <h6>3pm</h6>
+            </div>
+
+            <div class = "place col-md-6">
+                <p>
+                    <span class = "info-kor">서울특별시 마포구 와우산로</span> 94, 
+                    <span class = "info-kor">홍문관 지하</span> 4<span class = "info-kor">층 가람홀</span>
+                    <br>Garamhall, Hongmun-gwan B4F, 94, Wausan-ro, Mapo-gu, Seoul
+                </p>
+            </div>
+        </footer>
+
+        <div class = "sm-footer">
+            <div class = "sm-date col-md-6">
+                <h5>12.06.3pm</h5>
+            </div>
+
+            <div class = "sm-place col-md-6">
+                <p>
+                    <span class = "info-kor">서울특별시 마포구 와우산로</span> 94, 
+                    <span class = "info-kor">홍문관 지하</span> 4<span class = "info-kor">층 가람홀</span>
+                    <br>Garamhall, Hongmun-gwan B4F, 94, Wausan-ro, Mapo-gu, Seoul
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class = "popup-container">
+        <div class = "popup-wrap" id = "popup-title">
+
+            <div class = "popup">
+                <div class = "popup-header">
+                    <h2 class = "header-title">TIME TABLE</h2>
+                    <h2 class = "pop-btn-close" id="close-title" style = "cursor: pointer;">✕</h2>
+                </div>
+
+                <div class = "popup-body">
+                    <img src = "img/timetable_default.svg" id = "responsiveImage">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src='https://cdn.jsdelivr.net/npm/gsap@3.12.3/dist/gsap.min.js'></script><script type="module" src="js/bulge.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

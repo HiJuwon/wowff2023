@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WOW FILM FESTIVAL 2023</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="../css/page.css" rel="stylesheet" type="text/css">
+    <link href="../css/load.css" rel="stylesheet" type="text/css">
+    <link rel="icon" href="../img/favicon/favicon_96*96.png">
+</head>
+
+<body class = "container-fluid" style = "width: 100%; overflow-x: hidden; padding: 0; display: flex; flex-direction: column;">
+    <div ID = "loading">
+        <svg
+        class="container"
+        viewBox="0 0 40 40"
+        height="40"
+        width="40"
+        >
+            <circle 
+                class="track"
+                cx="20" 
+                cy="20" 
+                r="17.5" 
+                pathlength="100" 
+                stroke-width="5px" 
+                fill="none" 
+            />
+            <circle 
+                class="car"
+                cx="20" 
+                cy="20" 
+                r="17.5" 
+                pathlength="100" 
+                stroke-width="5px" 
+                fill="none" 
+            />
+        </svg>
+    </div>
+    <script >
+        const loading_page = document.getElementById("loading");
+        window.onload = function(){
+          loading_page.style.display = 'none';
+        }
+    </script>
+    
+    <div class = "md-header">
+        <div id="menuToggle" class = "md-btn-index">
+            
+            <div id = "showListButton">
+                <img src = "../img/menu.svg" id="menuIcon">
+            </div>
+            
+            <ul id="hiddenList">
+                <a href="page_HSDW.html"><li class = "menu" style = "margin-bottom: 1.5rem;">Hongik SIDI Week</li></a>
+                <a href="page_WFF_about.html"><li class = "menu">Wow Film Festival</li></a>
+                <a href="page_WFF_about.html"><li class = "small-menu">- About</li></a>
+                <a href="page_WFF_location.html"><li class = "small-menu">- Location</li></a>
+                <a href="page_WFF_Q&A.html"><li class = "small-menu" style = "margin-bottom: 1.5rem;">- Q &amp; A</li></a>
+                <a href="page_promotion.html"><li class = "menu" style = "margin-bottom: 1.5rem;">Promotion</li></a>
+                <a href="page_archive.html"><li class = "menu-selected">Archive</li></a>
+            </ul>
+        
+        </div>
+        <script src="../js/menu.js"></script>
+
+        <a href = "../index.html" class = "md-WFF">
+            <img src = "../img/symbol_WFF(black).svg">
+        </a>
+
+        <img src = "../img/symbol_HIVCD(black).svg" class = "md-HIVCD">
+    </div>
+
+    <div class = "container-fluid main-container" id = "archive-header" style = "flex: 1;">
+        <div class = "row" style = "display: flex; flex-direction: column;">
+
+            <header class = "col-lg-2">
+                <a href = "../index.html">
+                    <img src = "../img/symbol_WFF.svg">
+                </a>
+            </header>
+        
+            <div class = "col-lg-8 page-container">
+                <div class = "nav-holder">
+                    <nav>
+                        <a href = "page_HSDW.html" class = "menu">Hongik SIDI Week</a>
+                        <div ID = "WFF-menu">
+                            <a href = "page_WFF_about.html" class = "menu">Wow Film Festival</a>
+                            <div class = "small-nav">
+                                <a href = "page_WFF_about.html" class = "small-menu">About</a>
+                                <a href = "page_WFF_location.html" class = "small-menu">Location</a>
+                                <a href = "page_WFF_Q&A.html" class = "small-menu">Q &amp; A</a>
+                            </div>
+                        </div>
+                        <a href = "page_promotion.html" class = "menu">Promotion</a>
+                        <a href = "page_archive.html" class = "menu-selected">Archive</a>
+                    </nav>
+                </div>
+            </div>
+        
+            <div class = "col-lg-2 HIVCD">
+                <img src = "../img/symbol_HIVCD.svg" ID = "symbol-HIVCD">
+            </div>
+        </div>
+    </div>
+
+    <div class = "empty-cell discard"></div>
+    <div class = "empty-cell discard"></div>
+
+    <section class = "row row-cols-lg-3 row-cols-md-3 row-cols-2 archive-gallery fade-in" ID = "first-div">
+
+        <div class = "col frame">
+            <a href = "archive/leeeunseo.html" class = "image-link">
+                <img src = "../img/archive/leeeunseo/thumbnail_lion.png" class="hover">
+                <img src = "../img/archive/leeeunseo/thumbnail0_lion.png" class="default">
+            </a>
+            <div class = "archive-caption">
+                <h4>사자</h4>
+                <h6>대상</h6>
+            </div>
+        </div>
+
+        <div class = "col frame">
+            <a href = "archive/leechangjae.html" class = "image-link">
+                <img src = "../img/archive/leechangjae/thumbnail_inner peace.jpg" class="hover">
+                <img src = "../img/archive/leechangjae/thumbnail0_inner-peace.png" class="default">
+            </a>
+            <div class = "archive-caption">
+                <h4>inner peace</h4>
+                <h6>애니메이션 작품상</h6>
+            </div>
+        </div>
+
+        <div class = "col frame">
+            <a href = "archive/namyubin.html" class = "image-link">
+                <img src = "../img/archive/namyubin/thumbnail_HolyPlusTwinRoom.jpg" class="hover">
+                <img src = "../img/archive/namyubin/thumbnail0_HolyPlusTwinRoom.png" class="default">
+            </a>
+            <div class = "archive-caption">
+                <h4>Holy + Twin Room</h4>
+                <h6>실사 작품상</h6>
+            </div>
+        </div>
+
+        <div class = "col frame">
+            <a href = "archive/wonyejin.html" class = "image-link">
+                <img src = "../img/archive/wonyejin/thumbnail_bonsai.png" class="hover">
+                <img src = "../img/archive/wonyejin/thumbnail0_bonsai.png" class="default">
+            </a>
+            <div class = "archive-caption">
+                <h4>분재</h4>
+                <h6>촬영상</h6>
+            </div>
+        </div>
+
+        <div class = "col frame">
+            <a href = "archive/jooyeoungeun.html" class = "image-link">
+                <img src = "../img/archive/jooyeoungeun/thumbnail_GENUINE_ME.jpg" class="hover">
+                <img src = "../img/archive/jooyeoungeun/thumbnail0_GENUINE_ME.jpg" class="default">
+            </a>
+            <div class = "archive-caption">
+                <h4>GENUINE ME</h4>
+                <h6>미술&#47;비주얼상</h6>
+            </div>
+        </div>
+
+        <div class = "col frame">
+            <a href = "archive/leejihyun.html" class = "image-link">
+                <img src = "../img/archive/leejihyun/thumbnail_TheOldMen.jpg" class="hover">
+                <img src = "../img/archive/leejihyun/thumbnail0_TheOldMen.png" class="default">
+            </a>
+            <div class = "archive-caption">
+                <h4>The Old Men</h4>
+                <h6>편집상</h6>
+            </div>
+        </div>
+
+        <div class = "col frame">
+            <a href = "archive/kimjongseong.html" class = "image-link">
+                <img src = "../img/archive/kimjongseong/thumbnail_breakdown.png" class="hover">
+                <img src = "../img/archive/kimjongseong/thumbnail0_breakdown.png" class="default">
+            </a>
+            <div class = "archive-caption">
+                <h4>고장</h4>
+                <h6>각본상</h6>
+            </div>
+        </div>
+
+        <div class = "col frame">
+            <a href = "archive/choseoyeong.html" class = "image-link">
+                <img src = "../img/archive/choseoyeong/thumbnail_Hehe.png" class="hover">
+                <img src = "../img/archive/choseoyeong/thumbnail0_Hehe.jpg" class="default">
+            </a>
+            <div class = "archive-caption">
+                <h4>&lt;희희&gt; Hehe 囍</h4>
+                <h6>감독상</h6>
+            </div>
+        </div>
+
+        <div class = "col frame">
+            <a href = "archive/jeongwoosung.html" class = "image-link">
+                <img src = "../img/archive/jeongwoosung/thumbnail_language.jpg" class="hover">
+                <img src = "../img/archive/jeongwoosung/thumbnail0_language.jpg" class="default">
+            </a>
+            <div class = "archive-caption">
+                <h4>언어의 노래, 문자의 춤</h4>
+                <h6>모션포스터 작품상</h6>
+            </div>
+        </div>
+
+        <div class = "col frame">
+            <a href = "archive/kanggaeun.html" class = "image-link">
+                <img src = "../img/archive/kanggaeun/thumbnail_Our-Design-Dimension.jpg" class="hover">
+                <img src = "../img/archive/kanggaeun/thumbnail0_Our-Design-Dimension.jpg" class="default">
+            </a>
+            <div class = "archive-caption">
+                <h4>Our Design Dimension&#40;2023&#41;</h4>
+                <h6>모션그래픽 작품상</h6>
+            </div>
+        </div>
+
+        <div class = "col frame">
+            <a href = "archive/kimhyunji.html" class = "image-link">
+                <img src = "../img/archive/kimhyunji/thumbnail_The-Three-stroy-Tree-House.png" class="hover">
+                <img src = "../img/archive/kimhyunji/thumbnail0_The-Three-stroy-Tree-House.png" class="default">
+            </a>
+            <div class = "archive-caption">
+                <h4>The Three Story Tree House</h4>
+                <h6>사운드디자인상</h6>
+            </div>
+        </div>
+    </section>
+
+    <div class = "empty-cell discard"></div>
+    <div class = "empty-cell discard"></div>
+
+    <footer style = "flex-shrink: 0;">
+        <p>
+            2023 홍익시디 주간
+            <br>2023 Hongik SIDI Week
+        </p>
+
+        <div class = "gap"></div>
+
+        <p>
+            제33회 와우영상제
+            <br>33rd Wow Film Festival
+        </p>
+
+        <div class = "gap"></div>
+
+        <p>
+            서울특별시 마포구 와우산로 94, 홍문관 지하 4층 가람홀
+            <br>Garamhall, Hongmun-gwan B4F, 94, Wausan-ro, Mapo-gu, Seoul
+        </p>
+
+        <div class = "gap"></div>
+        
+        <div class = "btn-sns">
+            <a href = "mailto:wowff2023@gmail.com" class = "btn-mail">
+                <img src = "../img/icon_email.svg">
+            </a>
+            <a href = "https://www.instagram.com/2023wowff/" class = "btn-insta">
+                <img src = "../img/icon_instagram.svg">
+            </a>
+        </div>
+    </footer>
+
+    <script src = "../js/fade.js"></script>
+
+    <!-- 마우스 커서 커스텀 -->
+    <div class="custom-cursor"></div>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js'></script><script  src="../js/cursor.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
