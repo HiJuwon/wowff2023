@@ -72,7 +72,16 @@ header {
     justify-content: space-between;
 }
 
-#sm-nav, #sm-WFF, .sm-footer {
+#sm-nav {
+    display: none;
+    z-index: 1;
+}
+
+#sm-HSDW {
+    pointer-events: none;
+}
+
+#sm-WFF, .sm-footer {
     display: none;
     z-index: 1;
 
