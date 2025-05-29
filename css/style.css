@@ -153,7 +153,7 @@ header {
 }
 
 footer {
-    background-image: url("../img/main_background.png");
+    background-image: url("./img/main_background.png");
     background-clip: text;
     -webkit-background-clip: text;
     mix-blend-mode: exclusion;

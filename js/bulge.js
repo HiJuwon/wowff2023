@@ -382,6 +382,6 @@ const fragment = `
 
   function getTextureSrc() {
     // 가로 길이가 992px보다 작으면 intro.png, 아니면 main_background.png 반환
-    return window.innerWidth < 992 ? "../img/intro.png" : "../img/main_background.png";
+    return window.innerWidth < 992 ? "./img/intro.png" : "./img/main_background.png";
   }
 }
